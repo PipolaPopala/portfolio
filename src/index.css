@@ -23,3 +23,27 @@
     -webkit-text-stroke: 1px white;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* looking scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff99;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00e187;
+}
+
+/* looking scrollbar */

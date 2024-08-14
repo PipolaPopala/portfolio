@@ -7,6 +7,7 @@ import {
   FaFigma,
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import LinkVisuallyHidden from "../LinkVisuallyHidden";
 
 const about = {
   title: "About me",
@@ -152,7 +153,7 @@ const Resume = () => {
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto relative">
         <Tabs
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
@@ -168,6 +169,7 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <LinkVisuallyHidden linkId="resume" />
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}

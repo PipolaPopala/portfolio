@@ -2,15 +2,17 @@ import { Button } from "../ui/button";
 
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import LinkVisuallyHidden from "../LinkVisuallyHidden";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-8 xl:py-12 text-white relative">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-4xl font-semibold" id="start">
+        <LinkVisuallyHidden linkId="start" />
+        <span className="text-4xl font-semibold">
           Evgenii<span className="text-accent">.</span>
-        </h1>
+        </span>
         {/* desktop nav & hire me button*/}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
